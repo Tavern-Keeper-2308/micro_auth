@@ -13,7 +13,7 @@ services:
     # preDeployCommand: "bundle exec rails db:migrate" # preDeployCommand only available on paid instance types
     startCommand: "bundle exec rails server"
     envVars:
-      - key: micro_auth_production
+      - key: DATABASE_URL
         fromDatabase:
           name: micro_auth
           property: connectionString
