@@ -1,21 +1,21 @@
 databases:
-  - name: mysite
-    databaseName: mysite
-    user: mysite
+  - name: micro_auth
+    databaseName: micro_auth
+    user: micro_auth
     plan: free
 
 services:
   - type: web
-    name: mysite
+    name: micro_auth
     runtime: ruby
     plan: free
     buildCommand: "./bin/render-build.sh"
     # preDeployCommand: "bundle exec rails db:migrate" # preDeployCommand only available on paid instance types
     startCommand: "bundle exec rails server"
     envVars:
-      - key: DATABASE_URL
+      - key: micro_auth_production
         fromDatabase:
-          name: mysite
+          name: micro_auth
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
