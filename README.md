@@ -51,6 +51,7 @@
 
 #### Production
 * [![rack-cors][gem-rackcors]][gem-rackcors-url]
+* [![devise][gem-devise]][gem-devise-url]
 
 #### Testing and Development
 * [![rspec-rails][gem-rspec-rails]][gem-rspec-rails-url]
@@ -277,6 +278,9 @@ Kevin Zolman
 
 [gem-rspec-rails]: https://img.shields.io/badge/rspec--rails-6.1.0-green?style=flat-square
 [gem-rspec-rails-url]: https://github.com/rspec/rspec-rails
+
+[gem-devise]: https://img.shields.io/badge/devise-4.9.2-purple?style=flat-square
+[gem-devise-url]: https://github.com/heartcombo/devise
 
 [gem-simplecov]: https://img.shields.io/badge/simplecov-0.22.0-yellow?style=flat-square
 [gem-simplecov-url]: https://github.com/simplecov-ruby/simplecov
